@@ -11,14 +11,6 @@
 #if MSLeakHunter_ENABLED
 
 /**
- * @discussion allows you to enable/disable only this leak hunter.
- * if MSLeakHunter is completely disabled, this setting doesn't have effect.
- */
-#define MSViewLeakHunter_ENABLED 0
-
-#if MSViewLeakHunter_ENABLED
-
-/**
  * @discussion if a view hasn't been deallocated after this time after it disappeared from screen, it's considered "pottentially leaked"
  */
 #define kMSViewLeakHunterDisappearAndDeallocateMaxInterval 15.0f
@@ -29,7 +21,5 @@
 @interface MSViewLeakHunter : NSObject <MSLeakHunter>
 
 @end
-
-#endif
 
 #endif
