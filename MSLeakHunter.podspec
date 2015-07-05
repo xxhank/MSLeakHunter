@@ -88,9 +88,8 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
-  s.source_files  = "MSLeakHunter.{h,m},MSLeakHunter+Private.h,MSViewLeakHunter.{h,m},MSViewControllerLeakHunter.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "*.{h,m}"
+  s.exclude_files = "MSLeakHunterRetainBreakpointsHelper.{h,m}", "MSZombieHunter.{h,m}"
 
   # s.public_header_files = "Classes/**/*.h"
 end
