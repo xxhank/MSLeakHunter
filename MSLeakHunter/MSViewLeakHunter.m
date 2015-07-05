@@ -12,8 +12,6 @@
 
 #if MSLeakHunter_ENABLED
 
-#if MSViewLeakHunter_ENABLED
-
 @interface UIView (MSViewLeakHunter)
 
 - (void)_msviewLeakHunter_didMoveToWindow;
@@ -74,7 +72,5 @@
 }
 
 @end
-
-#endif 
 
 #endif
